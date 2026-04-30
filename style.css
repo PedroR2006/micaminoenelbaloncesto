@@ -1,0 +1,416 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+}
+
+/* HEADER AHORA ENCIMA DE LA IMAGEN */
+header {
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+.logo {
+  width: 70px;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+header h1 {
+  margin: 10px 0;
+  font-size: 42px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* MAIN FULL WIDTH */
+main {
+  width: 100%;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+}
+
+/* 🔥 HERO CON IMAGEN DE FONDO */
+.principal {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url("image/pexels-pixabay-358042.jpg");
+
+  background-size: cover;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+
+  height: calc(100vh - 0px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  gap: 40px;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 40%;
+}
+
+/* TEXTO */
+.small-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ff6600;
+}
+
+.principal h2 {
+  font-size: 70px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.principal p {
+  max-width: 500px;
+  margin: 0 0 20px 0;
+  color: #cccccc;
+}
+
+.hero-text {
+  max-width: 550px;
+  margin: 0 auto 25px auto;
+  color: #d6d6d6;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.side-text {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* BOTÓN */
+.btn {
+  display: inline-block;
+  background-color: #ff6600;
+  color: white;
+  padding: 12px 22px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #cc5200;
+}
+
+/* ABOUT */
+.about-page {
+  width: 85%;
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.about-text h2 {
+  color: #ff6600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  color: #f0f0f0;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.about-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.about-images img {
+  width: 48%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #0d3b66;
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .principal {
+    flex-direction: column;
+    text-align: center;
+    padding: 120px 20px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .principal h2 {
+    font-size: 42px;
+  }
+
+  .about-images img {
+    width: 100%;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+/* ===== FONDOS PARA OTRAS PAGINAS ===== */
+
+/* ABOUT */
+.about-body {
+  background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("image/LEBRON.jpg"),
+    url("image/kobe-bryant-basketball-71xsox4d8xzqqb02.jpg"),
+    url("image/Jordan.jpg");
+
+  background-size: cover, contain, contain, contain;
+  background-position: center, left center, center center, right center;
+  background-repeat: no-repeat;
+}
+
+/* SERVICES */
+.services-body {
+  background: linear-gradient(
+      rgba(0,0,0,0.7),
+      rgba(0,0,0,0.7)
+    ),
+    url("image/services.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* CONTACT */
+.contact-body {
+  background: linear-gradient(
+      rgba(0,0,0,0.7),
+      rgba(0,0,0,0.7)
+    ),
+    url("im");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.about-layout {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 90%;
+  margin: 60px auto;
+}
+
+.about-player {
+  width: 40%;
+}
+
+.about-player img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 15px;
+  filter: brightness(70%);
+}
+
+.about-info {
+  width: 60%;
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.about-info h2 {
+  color: orange;
+}
+
+.about-info p {
+  line-height: 1.6;
+}
+.players-section {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.player-row {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 50px;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.player-row img {
+  width: 35%;
+  height: 350px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 12px;
+  filter: brightness(75%);
+}
+
+.player-info {
+  width: 65%;
+}
+
+.player-info h2 {
+  color: orange;
+  margin-bottom: 15px;
+}
+
+.player-info p {
+  color: #f0f0f0;
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .player-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .player-row img,
+  .player-info {
+    width: 100%;
+  }
+}
+.services-content {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.services-content h2 {
+  color: orange;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.service-card {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  border-left: 5px solid #ff6600;
+}
+
+.service-card h3 {
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #f0f0f0;
+  line-height: 1.7;
+  font-size: 17px;
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+.contact-container {
+  width: 90%;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.contact-container h2 {
+  color: #ff6600;
+  margin-bottom: 30px;
+  font-size: 38px;
+  letter-spacing: 1px;
+}
+
+.contact-card {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-card p {
+  font-size: 18px;
+  margin: 15px 0;
+  color: #f0f0f0;
+}
+.contact-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
